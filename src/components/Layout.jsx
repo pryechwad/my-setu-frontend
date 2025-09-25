@@ -141,15 +141,12 @@ const Layout = ({ children }) => {
               </div>
               
               <div>
-                <h4 className="text-lg font-semibold text-white mb-4">Technology</h4>
-                <div className="flex flex-wrap gap-2">
-                  {['React', 'Tailwind', 'Setu API', 'Vite'].map((tech) => (
-                    <span
-                      key={tech}
-                      className="px-3 py-1 bg-white/10 rounded-full text-sm text-gray-300"
-                    >
-                      {tech}
-                    </span>
+                <h4 className="text-lg font-semibold text-white mb-4">Security</h4>
+                <div className="space-y-2">
+                  {['256-bit SSL Encryption', 'SOC 2 Compliant', 'GDPR Protected'].map((feature) => (
+                    <div key={feature} className="text-gray-300 hover:text-white transition-colors text-sm">
+                      🔒 {feature}
+                    </div>
                   ))}
                 </div>
               </div>
